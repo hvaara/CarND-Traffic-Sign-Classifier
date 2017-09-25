@@ -1,4 +1,4 @@
-(writeup/output_
+
 # Self-Driving Car Engineer Nanodegree
 
 ## Deep Learning
@@ -1200,7 +1200,7 @@ for image in wild_gray:
 
 
 
-![png](output_43_5.png)
+![png](writeup/output_43_5.png)
 
 
 
