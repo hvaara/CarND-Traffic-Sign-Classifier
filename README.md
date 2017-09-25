@@ -1114,6 +1114,11 @@ The model is trained by optimizing for the minimum cross entropy between the one
 
 After training is done the model is saved and the accuracy printed.
 
+Train Accuracy = 99.5%
+Validation Accuracy = 96.5%
+Test Accuracy = 93.8%
+These were calculated in the code frame immediately above.
+
 I think the LeNet architecture works well because the tasks are quite similar. We are trying to recognize symbols that are cropped and resized to a standard size. Traffic signs of the same class are usually identical, and even with noise and blur they are easy to recognize.
 
 ---
