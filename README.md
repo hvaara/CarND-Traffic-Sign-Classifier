@@ -1106,6 +1106,16 @@ with tf.Session() as sess:
 
 
 
+## Solution approach
+
+Training is run for `EPOCHS` epochs. In this case 40. In each epoch the training data is split into batch sizes with `BATCH_SIZE` in each. We use batches so we don't run into memory issues.
+
+The model is trained by optimizing for the minimum cross entropy between the one hot encoding and the logits using the Adam optimizer.
+
+After training is done the model is saved and the accuracy printed.
+
+I think the LeNet architecture works well because the tasks are quite similar. We are trying to recognize symbols that are cropped and resized to a standard size. Traffic signs of the same class are usually identical, and even with noise and blur they are easy to recognize.
+
 ---
 
 ## Step 3: Test a Model on New Images
@@ -1138,27 +1148,27 @@ for filename in wild_filenames:
 ```
 
 
-![png](writeup/output_40_0.png)
+![png](writeup/output_42_0.png)
 
 
 
-![png](writeup/output_40_1.png)
+![png](writeup/output_42_1.png)
 
 
 
-![png](writeup/output_40_2.png)
+![png](writeup/output_42_2.png)
 
 
 
-![png](writeup/output_40_3.png)
+![png](writeup/output_42_3.png)
 
 
 
-![png](writeup/output_40_4.png)
+![png](writeup/output_42_4.png)
 
 
 
-![png](writeup/output_40_5.png)
+![png](writeup/output_42_5.png)
 
 
 
@@ -1170,27 +1180,27 @@ for image in wild_gray:
 ```
 
 
-![png](writeup/output_41_0.png)
+![png](writeup/output_43_0.png)
 
 
 
-![png](writeup/output_41_1.png)
+![png](writeup/output_43_1.png)
 
 
 
-![png](writeup/output_41_2.png)
+![png](writeup/output_43_2.png)
 
 
 
-![png](writeup/output_41_3.png)
+![png](writeup/output_43_3.png)
 
 
 
-![png](writeup/output_41_4.png)
+![png](writeup/output_43_4.png)
 
 
 
-![png](output_41_5.png)
+![png](output_43_5.png)
 
 
 
